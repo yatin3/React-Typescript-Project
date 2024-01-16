@@ -1,8 +1,8 @@
 class Todo{
   id: string;
-  text: string;
+  text: string | undefined;
 
-  constructor(todoText: string){
+  constructor(todoText: string | undefined){
     this.text = todoText;
     this.id = new Date().toISOString();
   }
